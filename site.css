@@ -252,6 +252,7 @@ li {
 
 .feature-band,
 .quick-links,
+.maramataka-band,
 .image-story,
 .page {
     width: min(1160px, calc(100% - 40px));
@@ -259,7 +260,8 @@ li {
 }
 
 .feature-band,
-.quick-links {
+.quick-links,
+.maramataka-band {
     padding: clamp(48px, 8vw, 92px) 0;
 }
 
@@ -272,6 +274,74 @@ li {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
+}
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.quote-grid figure {
+    margin: 0;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(245, 189, 71, 0.08);
+}
+
+.quote-grid blockquote {
+    margin: 0 0 10px;
+    color: var(--ink);
+    font-size: 1.15rem;
+    font-weight: 780;
+    line-height: 1.35;
+}
+
+.quote-grid figcaption,
+.quote-grid a {
+    color: var(--premium);
+    font-size: 0.9rem;
+    font-weight: 760;
+}
+
+.maramataka-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.source-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(4, 18, 20, 0.62);
+}
+
+.source-list h3 {
+    flex-basis: 100%;
+    margin-bottom: 2px;
+}
+
+.source-list a {
+    min-height: 36px;
+    padding: 8px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.source-list a:hover {
+    color: #071013;
+    background: linear-gradient(135deg, #f8fbfb, #b7d6d7);
 }
 
 .feature-card,
@@ -587,6 +657,8 @@ address {
 
 @media (max-width: 920px) {
     .feature-grid,
+    .quote-grid,
+    .maramataka-layout,
     .link-list,
     .image-story,
     .about-hero,
