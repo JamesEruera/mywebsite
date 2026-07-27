@@ -191,7 +191,6 @@ nav a[aria-current="page"] {
     width: 100%;
     aspect-ratio: 1;
     height: auto;
-    border-radius: 999px;
     object-fit: cover;
     object-position: center;
     opacity: 0.92;
