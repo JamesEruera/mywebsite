@@ -459,6 +459,22 @@ address {
     font-weight: 850;
 }
 
+.legend-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.85;
+}
+
+.legend-icon svg circle,
+.legend-icon svg path:first-child {
+    fill: currentColor;
+    fill-opacity: 0.14;
+}
+
 .legend-icon.moon {
     background: var(--moon);
 }
@@ -536,4 +552,10 @@ address {
             linear-gradient(0deg, rgba(1, 7, 9, 0.96), rgba(1, 7, 9, 0.58) 64%, rgba(1, 7, 9, 0.22)),
             linear-gradient(90deg, rgba(1, 7, 9, 0.78), rgba(1, 7, 9, 0.28));
     }
+}
+.svg-defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }

@@ -9,6 +9,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+        <symbol id="icon-eye" viewBox="0 0 24 24">
+            <path d="M2.8 12s3.4-6 9.2-6 9.2 6 9.2 6-3.4 6-9.2 6-9.2-6-9.2-6Z"/>
+            <circle cx="12" cy="12" r="2.7"/>
+        </symbol>
+        <symbol id="icon-warning" viewBox="0 0 24 24">
+            <path d="M12 3 22 20H2L12 3Z"/>
+            <path d="M12 8.3v5.2M12 17.2h.01"/>
+        </symbol>
+        <symbol id="icon-rest" viewBox="0 0 24 24">
+            <path d="M17.6 15.7A7.6 7.6 0 0 1 8.3 6.4a7.8 7.8 0 1 0 9.3 9.3Z"/>
+            <path d="M15.1 6h4.2l-4.2 4.2h4.2M18.8 3.2h2.7l-2.7 2.7h2.7"/>
+        </symbol>
+        <symbol id="icon-drop" viewBox="0 0 24 24">
+            <path d="M12 2.8s6.1 7 6.1 12a6.1 6.1 0 0 1-12.2 0c0-5 6.1-12 6.1-12Z"/>
+        </symbol>
+        <symbol id="icon-fish" viewBox="0 0 24 24">
+            <path d="M3 12s4-5.2 9.3-5.2c3.7 0 6.1 2 7.7 5.2-1.6 3.2-4 5.2-7.7 5.2C7 17.2 3 12 3 12Z"/>
+            <path d="m20 12 2.1-3.4v6.8L20 12ZM7.2 12h.01"/>
+        </symbol>
+        <symbol id="icon-eel" viewBox="0 0 24 24">
+            <path d="M2.7 14.2c3.1-5.2 6.2-5.3 9.3-1.3 2.6 3.4 5.6 2.9 9.3-2"/>
+            <path d="M19.2 10.8 21.4 9l-.4 3"/>
+        </symbol>
+        <symbol id="icon-crayfish" viewBox="0 0 24 24">
+            <path d="M12 8.4c2.4 0 4.1 1.9 4.1 4.7 0 3.1-1.8 6.1-4.1 6.1s-4.1-3-4.1-6.1c0-2.8 1.7-4.7 4.1-4.7Z"/>
+            <path d="M8 9.4 4.5 6.2M16 9.4l3.5-3.2M7.9 13.2H4.4M16.1 13.2h3.5M9.3 18.1l-2 2.1M14.7 18.1l2 2.1M9.8 6.8 8.6 3.9M14.2 6.8l1.2-2.9"/>
+        </symbol>
+        <symbol id="icon-shellfish" viewBox="0 0 24 24">
+            <path d="M12 3.2 20 7.8v8.4l-8 4.6-8-4.6V7.8l8-4.6Z"/>
+            <path d="M4.4 8.1 12 12l7.6-3.9M12 12v8.3M8.3 5.3v4.8M15.7 5.3v4.8"/>
+        </symbol>
+        <symbol id="icon-scope" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="6.4"/>
+            <path d="M12 2.8v4M12 17.2v4M2.8 12h4M17.2 12h4M12 10.3v3.4M10.3 12h3.4"/>
+        </symbol>
+        <symbol id="icon-basket" viewBox="0 0 24 24">
+            <path d="M5.2 10.2h13.6l-1.4 9.2H6.6l-1.4-9.2Z"/>
+            <path d="M8.3 10.2C8.6 6.4 9.9 4.5 12 4.5s3.4 1.9 3.7 5.7M8.4 13.5h7.2M8.9 16.4h6.2"/>
+        </symbol>
+        <symbol id="icon-leaf" viewBox="0 0 24 24">
+            <path d="M20.8 3.2C11.2 3.6 5.2 8 5.2 14.8c0 3.1 2.1 5.1 5.1 5.1 6.6 0 10.1-7.1 10.5-16.7Z"/>
+            <path d="M5 20c3.1-5.6 7.2-9.4 12.2-11.5"/>
+        </symbol>
+    </svg>
     <header class="site-header">
         <a class="brand" href="index.html" aria-label="Okoro home">
             <img src="assets/okoro-logo.png" alt="" width="44" height="44">
@@ -45,17 +90,17 @@
                 <h2>What the Maramataka Icons Mean</h2>
                 <p>Icons are prompts for observation and activity context. They are not energy ratings, and they should be read alongside the day notes, your local knowledge, and your own journal entries.</p>
                 <div class="legend-grid">
-                    <div><span class="legend-icon tide">◉</span><strong>Observe</strong><p>Look closely and record what you notice.</p></div>
-                    <div><span class="legend-icon warning">!</span><strong>Caution</strong><p>Read the notes before acting.</p></div>
-                    <div><span class="legend-icon moon">☾</span><strong>Rest</strong><p>Rest, recovery, or restraint prompt.</p></div>
-                    <div><span class="legend-icon tide">⌁</span><strong>Water</strong><p>Water conditions or place-based prompt.</p></div>
-                    <div><span class="legend-icon tide">ϟ</span><strong>Fish</strong><p>Fishing or water activity prompt.</p></div>
-                    <div><span class="legend-icon environment">∿</span><strong>Eel</strong><p>Tuna or waterway activity prompt.</p></div>
-                    <div><span class="legend-icon warning">⌬</span><strong>Crayfish</strong><p>Koura or coastal activity prompt.</p></div>
-                    <div><span class="legend-icon warning">⬡</span><strong>Shellfish</strong><p>Shellfish, shore, or tide prompt.</p></div>
-                    <div><span class="legend-icon premium">⌖</span><strong>Hunt</strong><p>Hunting or visibility prompt.</p></div>
-                    <div><span class="legend-icon environment">◌</span><strong>Gather</strong><p>Kai gathering prompt.</p></div>
-                    <div><span class="legend-icon environment">✦</span><strong>Plant</strong><p>Planting or garden prompt.</p></div>
+                    <div><span class="legend-icon tide"><svg><use href="#icon-eye"></use></svg></span><strong>Observe</strong><p>Look closely and record what you notice.</p></div>
+                    <div><span class="legend-icon warning"><svg><use href="#icon-warning"></use></svg></span><strong>Caution</strong><p>Read the notes before acting.</p></div>
+                    <div><span class="legend-icon moon"><svg><use href="#icon-rest"></use></svg></span><strong>Rest</strong><p>Rest, recovery, or restraint prompt.</p></div>
+                    <div><span class="legend-icon tide"><svg><use href="#icon-drop"></use></svg></span><strong>Water</strong><p>Water conditions or place-based prompt.</p></div>
+                    <div><span class="legend-icon tide"><svg><use href="#icon-fish"></use></svg></span><strong>Fish</strong><p>Fishing or water activity prompt.</p></div>
+                    <div><span class="legend-icon environment"><svg><use href="#icon-eel"></use></svg></span><strong>Eel</strong><p>Tuna or waterway activity prompt.</p></div>
+                    <div><span class="legend-icon warning"><svg><use href="#icon-crayfish"></use></svg></span><strong>Crayfish</strong><p>Koura or coastal activity prompt.</p></div>
+                    <div><span class="legend-icon warning"><svg><use href="#icon-shellfish"></use></svg></span><strong>Shellfish</strong><p>Shellfish, shore, or tide prompt.</p></div>
+                    <div><span class="legend-icon premium"><svg><use href="#icon-scope"></use></svg></span><strong>Hunt</strong><p>Hunting or visibility prompt.</p></div>
+                    <div><span class="legend-icon environment"><svg><use href="#icon-basket"></use></svg></span><strong>Gather</strong><p>Kai gathering prompt.</p></div>
+                    <div><span class="legend-icon environment"><svg><use href="#icon-leaf"></use></svg></span><strong>Plant</strong><p>Planting or garden prompt.</p></div>
                 </div>
             </article>
 
