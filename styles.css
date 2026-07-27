@@ -296,8 +296,7 @@ li {
 
 .image-story {
     display: grid;
-    grid-template-columns: minmax(0, 0.92fr) minmax(280px, 1.08fr);
-    gap: clamp(22px, 5vw, 54px);
+    grid-template-columns: minmax(0, 760px);
     align-items: center;
     padding: clamp(42px, 7vw, 82px) 0;
 }
@@ -457,22 +456,30 @@ address {
     border-radius: 999px;
     color: #071013;
     font-weight: 850;
+    overflow: hidden;
 }
 
 .legend-icon svg {
     width: 20px;
     height: 20px;
+    display: block;
     fill: none;
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 1.85;
+    overflow: hidden;
 }
 
-.legend-icon svg circle,
-.legend-icon svg path:first-child {
+.legend-icon svg * {
+    fill: none;
+    stroke: currentColor;
+    vector-effect: non-scaling-stroke;
+}
+
+.legend-icon svg circle {
     fill: currentColor;
-    fill-opacity: 0.14;
+    fill-opacity: 0.18;
 }
 
 .legend-icon.moon {
