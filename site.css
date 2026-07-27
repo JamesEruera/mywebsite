@@ -49,6 +49,28 @@ body::before {
     filter: saturate(0.86);
 }
 
+body::after {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    background-image:
+        radial-gradient(circle, rgba(244, 248, 248, 0.74) 0 1px, transparent 1.4px),
+        radial-gradient(circle, rgba(199, 214, 245, 0.46) 0 1px, transparent 1.3px),
+        radial-gradient(circle, rgba(87, 199, 219, 0.34) 0 1px, transparent 1.2px);
+    background-position:
+        16px 22px,
+        72px 96px,
+        132px 48px;
+    background-size:
+        142px 142px,
+        219px 219px,
+        311px 311px;
+    opacity: 0.34;
+    mask-image: linear-gradient(to bottom, black 0%, black 62%, transparent 100%);
+    pointer-events: none;
+}
+
 a {
     color: inherit;
 }
