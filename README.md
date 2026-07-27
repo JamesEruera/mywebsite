@@ -1,4 +1,4 @@
-# Okoro Website
+# Åkoro Website
 
 This folder is a dependency-free static website intended for GitHub Pages.
 
