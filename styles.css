@@ -347,6 +347,36 @@ li {
     margin-bottom: 30px;
 }
 
+.about-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 180px;
+    gap: clamp(22px, 5vw, 56px);
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--line);
+}
+
+.about-hero h1 {
+    font-size: clamp(3rem, 8vw, 6.2rem);
+}
+
+.about-hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 0 20px 70px rgba(87, 199, 219, 0.2);
+}
+
+.biography p {
+    color: rgba(244, 248, 248, 0.84);
+    font-size: 1.06rem;
+}
+
+.biography p:last-child {
+    margin-bottom: 0;
+}
+
 .page-hero h1 {
     font-size: clamp(3rem, 8vw, 6.2rem);
 }
@@ -529,8 +559,14 @@ address {
     .feature-grid,
     .link-list,
     .image-story,
+    .about-hero,
     .support-layout {
         grid-template-columns: 1fr;
+    }
+
+    .about-hero img {
+        width: 120px;
+        height: 120px;
     }
 
     .contact-panel {
